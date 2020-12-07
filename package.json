@@ -1,6 +1,6 @@
 {
   "name": "momo-request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple solution of public state management in the request layer",
   "module": "index.js",
   "dependencies": {

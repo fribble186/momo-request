@@ -16,10 +16,17 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-react": "^7.17.0"
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "^24.7.1"
   },
   "scripts": {
-    "build": "webpack --config ./webpack.config.js"
+    "build": "webpack --config ./webpack.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testRegex": "(/test/.*\\.test\\.js)$",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",

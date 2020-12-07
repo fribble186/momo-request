@@ -34,6 +34,13 @@ export const MRequest = ({ page, ...promises }) => {
       }
     })
   }
+  services["getParams"] = () => {
+    let params = {}
+    for (let promise_key in promises) {
+      params[promise_key] = services["_" + promise_key].params
+    }
+    return params
+  }
   Store[page] = services
   return Store[page]
 }

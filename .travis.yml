@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "12"
+deploy:
+  provider: npm
+  email: psj124@qq.com
+  api_key:
+    secure: Nj58EFZYOrtKDuLAZI4onhvV0dWvYH+4nahV/u4bjLz3Y8vTB8PGjiJS0+WI6DIxxk5sHyGQtcgB0vuB3+akUL7M79LMfjDbBPAHj+igwjiWFBwDKZOkdvuEvNlkdoSZ4MV0wN6fkN1vNBEOmXHqMc8Jj07HuV6l94uJz3m6DOelt12duyQTKSR8/BWOBFUwrTK2mbXfx7epY7hoBW8rpxADEC8nsmYMMYJYUQ5V/Aub9TqfFlrwB3vJjX/FI3q7YiqzVqJrm2LmxzFMmqkNkxvu2CxM4JgTVFSwD8hbfuOSuYe6oenyKP9NvaRsG/huVQAjqonOK57EAcVIC/hBf6ajDvP28Dq1oas1MuJ1Kr0Z9ll0WuRdZkZeT4gpO3MF/lZUSb2hGy0lFxE/JwBBrijgkgmgQvudMMl+1vhbRkuObAYGFEwO0dG+N2ixgcFT6Hgw4B2CVYlazCmKMRkV+xbP5RWGfLT1KUmP5bpiZ10gnQKd9s0yU2vsPrDowRvPr0EZjy2DhaSoxbpKiIPSr8FPgkR6OIH7/J7WEYBHdA7KDuK+ml7kGx60vro3QtLljzmQwe5IwWPvffenWLi2esk5lc2cNJIUi9UKgVtdKUrZOda4HbqOb8OR+OHgYqepe1eWnxGj9SDpaOgwH5244i+HUE88aKS3IwUcDqeMZDo=
+  on:
+    tags: true
+    repo: fribble186/momo-request
+    branch: main
+  skip_cleanup: 'true'
